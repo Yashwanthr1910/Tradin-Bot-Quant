@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "indian-equities-quant-platform"
+version = "0.1.0"
+description = "Research infrastructure for Indian-equity systematic strategies"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.2,<4", "numpy>=1.24"]
+
+[project.optional-dependencies]
+yahoo = ["yfinance>=0.2.54"]
+parquet = ["pyarrow>=15"]
+dev = ["pytest>=8"]
+dashboard = ["streamlit>=1.40,<2", "plotly>=5.20,<7"]
+fyers = ["fyers-apiv3>=3.1,<4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

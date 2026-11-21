@@ -1,0 +1,6 @@
+# Core research and data-quality tools
+pandas>=2.2,<4
+numpy>=1.24
+
+# Optional provider/storage extras:
+# Optional groups are defined in pyproject.toml: yahoo, parquet, dashboard, dev.
